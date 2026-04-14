@@ -728,6 +728,14 @@ a {
     padding: 0.25rem 0;
   }
 
+  .project-carousel .row {
+    --bs-gutter-x: 0;
+  }
+
+  .project-carousel-card img {
+    aspect-ratio: 3 / 4;
+  }
+
   .quote-form-actions {
     align-items: flex-start;
   }
@@ -737,13 +745,21 @@ a {
   }
 
   .project-carousel {
-    padding: 0 2.75rem;
+    padding: 0;
   }
 
   .project-carousel .carousel-control-prev,
   .project-carousel .carousel-control-next {
     width: 38px;
     height: 38px;
+  }
+
+  .project-carousel .carousel-control-prev {
+    left: 0.75rem;
+  }
+
+  .project-carousel .carousel-control-next {
+    right: 0.75rem;
   }
 
   .project-carousel .carousel-control-prev-icon,
