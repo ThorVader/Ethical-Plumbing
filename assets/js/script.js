@@ -6,6 +6,15 @@ let lastCardsPerSlide = 0;
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const projectImages = [
+  "150479.jpg",
+  "150501.jpg",
+  "150503.jpg",
+  "150504.jpg",
+  "150505.jpg",
+  "150506.jpg",
+  "150507.jpg",
+  "150508.jpg",
+  "7207.jpg",
   "WhatsApp Image 2026-04-04 at 3.56.24 AM (1).jpeg",
   "WhatsApp Image 2026-04-04 at 3.56.24 AM (2).jpeg",
   "WhatsApp Image 2026-04-04 at 3.56.24 AM.jpeg",
@@ -14,7 +23,6 @@ const projectImages = [
   "WhatsApp Image 2026-04-04 at 4.00.54 AM (1).jpeg",
   "WhatsApp Image 2026-04-04 at 4.00.54 AM.jpeg",
   "WhatsApp Image 2026-04-04 at 4.06.48 AM (1).jpeg",
-  "WhatsApp Image 2026-04-04 at 4.06.48 AM.jpeg",
   "WhatsApp Image 2026-04-04 at 4.08.57 AM.jpeg",
   "WhatsApp Image 2026-04-04 at 4.17.59 AM (1).jpeg",
   "WhatsApp Image 2026-04-04 at 4.17.59 AM.jpeg",

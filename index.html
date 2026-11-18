@@ -50,20 +50,28 @@
           <div class="hero-card">
             <span class="quick-label">Request a quotation</span>
             <h2 class="quote-form-title">Tell us what you need and we'll get back to you.</h2>
-            <form class="quote-form">
+            <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="917e9deb-7e6e-41f8-92f9-49c52b653300">
+              <input type="hidden" name="subject" value="New quote request from Ethical Plumbing">
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
+              <input type="checkbox" name="botcheck" hidden>
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label" for="quoteName">Full Name</label>
-                  <input class="form-control" id="quoteName" type="text" placeholder="Your name">
+                  <input class="form-control" id="quoteName" type="text" name="name" autocomplete="name" placeholder="Your name" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="quotePhone">Phone Number</label>
-                  <input class="form-control" id="quotePhone" type="tel" placeholder="078 758 9480">
+                  <input class="form-control" id="quotePhone" type="tel" name="phone" autocomplete="tel" placeholder="078 758 9480">
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="quoteEmail">Email Address</label>
+                  <input class="form-control" id="quoteEmail" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="quoteService">Service Needed</label>
-                  <select class="form-select" id="quoteService">
-                    <option selected>Choose a service</option>
+                  <select class="form-select" id="quoteService" name="service">
+                    <option value="" selected>Choose a service</option>
                     <option>Residential plumbing</option>
                     <option>Drain cleaning</option>
                     <option>Water tank installation</option>
@@ -75,11 +83,11 @@
                 </div>
                 <div class="col-md-6">
                   <label class="form-label" for="quoteArea">Service Area</label>
-                  <input class="form-control" id="quoteArea" type="text" placeholder="Cape Town, Stellenbosch...">
+                  <input class="form-control" id="quoteArea" type="text" name="service_area" placeholder="Cape Town, Stellenbosch...">
                 </div>
                 <div class="col-12">
                   <label class="form-label" for="quoteDetails">Project Details</label>
-                  <textarea class="form-control" id="quoteDetails" rows="4" placeholder="Briefly describe the issue or installation you need."></textarea>
+                  <textarea class="form-control" id="quoteDetails" name="message" rows="4" placeholder="Briefly describe the issue or installation you need." required></textarea>
                 </div>
               </div>
               <div class="quote-form-actions">
